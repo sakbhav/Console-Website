@@ -1,0 +1,26 @@
+{
+	"help": {
+		"desc": "display this help and exit",
+		"address": "NA"
+	},
+	"contact":{
+		"desc": "print my contact information",
+		"address": "commands/contact"
+	},
+	"whoami":{
+		"desc": "brief description",
+		"address": "commands/whoami"
+	},
+	"cv":{
+		"desc": "print my cv",
+		"address": "commands/cv"
+	},
+	"cv download":{
+		"desc": "download my cv in pdf format",
+		"address" : "commands/Saket_Resume.pdf"
+	},
+	"quote": {
+		"desc": "some random quote",
+		"address":"commands/quote.php"
+	}
+}
