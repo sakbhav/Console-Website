@@ -1,0 +1,23 @@
+{
+  "name": "console-website",
+  "version": "2.0.0",
+  "description": "My personal website",
+  "main": "index.html",
+  "dependencies": {
+    "xterm": "3.14.5",
+    "xterm-addon-fit": "0.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakbhav/Console-Website.git"
+  },
+  "author": "Saket Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakbhav/Console-Website/issues"
+  },
+  "homepage": "http://saket.srivastava.pw"
+}
