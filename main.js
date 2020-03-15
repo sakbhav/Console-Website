@@ -1,6 +1,3 @@
-//import * as Terminal from 'xterm';
-//import {fullscreen} from 'xterm/lib/addons/fullscreen/fullscreen';
-
 function main() {
   Terminal.applyAddon(fullscreen);
   Terminal.applyAddon(fit);
@@ -12,9 +9,8 @@ function main() {
   });
   term.open(document.getElementById('terminal'));
 
-  //term.toggleFullscreen();
   term.toggleFullScreen(true);
-  //term.fit();
+  term.fit();
 
   function runFakeTerminal() {
     var pastCommands = [];
@@ -95,27 +91,60 @@ function main() {
 
     function executeCommand(command){
       console.log(command);
-      switch (command) {
-        case "help":
-          term.writeln("clear");
-          term.writeln("whoami");
-          term.writeln("history");
-          break;
-        case "clear":
-          term.clear();
-          break;
-        case "whoami":
-          term.writeln(user);
-          break;
-        case "history":
-          for (i=0; i<pastCommands.length; i++) {
-             term.writeln(pastCommands[i]);
+      if (command == "help") {
+        term.writeln("clear                       Clear command line");
+        term.writeln("cv                          Print Saket's CV in markdown format");
+        term.writeln("cv download                 Download CV in PDF");
+        term.writeln("history                     Print command history");
+        term.writeln("whoami                      List current user");
+      } else if (command == "clear") {
+        term.clear();
+      } else if (command == "whoami") {
+        term.writeln(user);
+      } else if (command == "history") {
+        for (i=0; i<pastCommands.length; i++) {
+          term.writeln(pastCommands[i]);
+        }
+      } else if (command == "cv") {
+        term.writeln("");
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+            var lines = this.responseText.split('\n');
+            for (var i = 0; i < lines.length; i++) {
+              term.writeln(lines[i]);
+            }
           }
-          break;
-        default:
-          term.writeln(command+': command not found');
+        };
+        xhttp.open("GET", "cv.md", false);
+        xhttp.send();
+      } else if (command == "cv download") {
+        term.writeln("Downloading...")
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "cv.pdf");
+        xhr.responseType = "blob";
+        xhr.onload = function () {
+          saveData(this.response, 'Saket CV.pdf'); // saveAs is now your function
+        };
+        xhr.send();
+      } else {
+        term.writeln(command+': command not found');
       }
     }
   }
   runFakeTerminal();
+}
+
+function saveData(blob, fileName) // does the same as FileSaver.js
+{
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+    a.style = "display: none";
+
+    var url = window.URL.createObjectURL(blob);
+    a.href = url;
+    a.download = fileName;
+    a.click();
+    window.URL.revokeObjectURL(url);
 }
