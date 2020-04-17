@@ -5,30 +5,32 @@
 --------------------------------------------------------------------------------
 
 Site Reliability Engineer with 4+ years of experience in designing, deploying
-and administering scalable systems
+and administering scalable systems, currently working with a High Frequency Trading
+ Firm.
 
 ## Experience
 
 #### A.P.T. Portfolio Pvt. Ltd. | New Delhi, India
 *Senior Engineer | 2018 - Present*
 
-* Designed, developed and deployed multiple enterprise applications and
-proprietary applications.
-* Optimized High Frequency Trading servers for latency ciritical applications.
-* Automated and streamlined System Administration and monitoring processes.
+* Designed, deployed and maintained multiple enterprise applications like
+ Jira, Bitbucket, Mail Server (postfix), Web Server (apache), mysql etc.
+* Optimized High Frequency Trading servers for latency sensitive applications.
+* Automated and streamlined System Administration using python/bash and
+* Wrote custom checks for monitoring system (nagios).
 * Designed and developed processes for organisation-wide adoption of
-configuration management system and container solutions.
+configuration management system (ansible) and container solutions (systemd-nspawn).
+* Deployed inventory management system (netbox) and integrated it with ansible.
 
 #### D. E. Shaw India Pvt. Ltd. | Hyderabad, India
 *Member Technical | 2016 - 2018*
 
 * Being a part of systems team, supported D E Shaw infrastructure consisting
 of RHEL, Microsoft and various proprietary applications.
-* Worked on multiple automation projects to automate the repetitive tasks.
-* Created new alerts for a proprietary monitoring system.
-* Responsible for troubleshooting a variety of complex problem reports,
-management of software and hardware deployments, administration of
-various infrastructure-level systems.
+* Worked on multiple automation projects to automate the repetitive tasks in
+ python and powershell.
+* Created new alerts using python for a proprietary monitoring system.
+* Responsible for troubleshooting a variety of user issues and alerts.
 
 #### One.com India Pvt. Ltd. | Gurgaon, India
 *Associate System Administrator | 2015 - 2016*
@@ -56,9 +58,9 @@ Linux platform, Systems Administration and IT-Security projects.
 
 ##### Enterprise infrastructure Setup | A.P.T. Portfolio
 * Deployed organisation-wide Authentication, Authorization and naming services.
-* Deployed job scheduling grid and underlying uniform infrastructure for log
+* Deployed job scheduling grid and underlying uniform infrastructure for long
  running simulation jobs.
-* Prgrammed various ansible components to integrate with existing infrastructure
+* Programmed various ansible components to integrate with existing infrastructure
  and working CI/CD setup.
 
 ##### User Provisioning Automation | D. E. SHAW
