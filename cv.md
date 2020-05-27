@@ -16,7 +16,7 @@ and administering scalable systems, currently working with a High Frequency Trad
 * Designed, deployed and maintained multiple enterprise applications like
  Jira, Bitbucket, Mail Server (postfix), Web Server (apache), mysql etc.
 * Optimized High Frequency Trading servers for latency sensitive applications.
-* Automated and streamlined System Administration using python/bash and
+* Automated and streamlined System Administration using python/bash and provided System support.
 * Wrote custom checks for monitoring system (nagios).
 * Designed and developed processes for organisation-wide adoption of
 configuration management system (ansible) and container solutions (systemd-nspawn).
