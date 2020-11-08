@@ -90,13 +90,14 @@ function main() {
     });
 
     function executeCommand(command){
-      console.log(command);
+      //console.log(command);
       if (command == "help") {
         term.writeln("clear                       Clear command line");
         term.writeln("cv                          Print Saket's CV in markdown format");
         term.writeln("cv download                 Download CV in PDF");
         term.writeln("history                     Print command history");
         term.writeln("whoami                      List current user");
+        term.writeln("tmaj                        Print a joke (alias tellmeajoke)")
       } else if (command == "clear") {
         term.clear();
       } else if (command == "whoami") {
@@ -127,6 +128,20 @@ function main() {
           saveData(this.response, 'Saket CV.pdf'); // saveAs is now your function
         };
         xhr.send();
+      } else if (command == "tellmeajoke" || command == "tmaj"){
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.responseText)
+            term.writeln("")
+            term.writeln(data[0].setup)
+            term.writeln(data[0].punchline)
+            term.writeln("")
+          }
+        };
+        xhttp.open("GET", "https://official-joke-api.appspot.com/jokes/programming/random", false);
+        xhttp.send();
       } else {
         term.writeln(command+': command not found');
       }
