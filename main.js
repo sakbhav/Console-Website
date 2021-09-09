@@ -133,14 +133,14 @@ function main() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
-            var data = JSON.parse(this.responseText)
+            var data = this.responseText.replace(/\r?\n/g, "\r\n")
             term.writeln("")
-            term.writeln(data[0].setup)
-            term.writeln(data[0].punchline)
+            console.log(data)
+            term.writeln(data)
             term.writeln("")
           }
         };
-        xhttp.open("GET", "https://official-joke-api.appspot.com/jokes/programming/random", false);
+        xhttp.open("GET", "https://v2.jokeapi.dev/joke/Programming?format=txt", false);
         xhttp.send();
       } else {
         term.writeln(command+': command not found');
