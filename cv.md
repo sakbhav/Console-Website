@@ -7,61 +7,60 @@
 Site Reliability Engineer with 5+ years of experience in designing, deploying
 and administering scalable systems, currently working with a High Frequency Trading
  Firm.
+ 
+## Skills
+
+**Programming Languages:** Python, Golang, Bash, Perl, C, Web (js/css/php)  
+**Applications:** Apache, Ansible, Postfix, Nagios, Containers (systemd-nspawn/
+  docker), MySQL, bind, LDAP, Kerberos, Jira/Bitbucket/Bamboo, htcondor  
 
 ## Experience
 
 #### A.P.T. Portfolio Pvt. Ltd. | New Delhi, India
-*Senior Engineer | 2018 - Present*
+*Senior DevOps Engineer | Mar 2018 - Present*
 
 * Designed, deployed and maintained multiple enterprise applications like
  Jira, Bitbucket, Mail Server (postfix), Web Server (apache), mysql etc.
 * Optimized High Frequency Trading servers for latency sensitive applications.
 * Automated and streamlined System Administration using python/bash and provided System support.
-* Wrote custom checks for monitoring system (nagios).
+* Deployed Nagios monitoring system and wrote custom checks.
 * Designed and developed processes for organisation-wide adoption of
 configuration management system (ansible) and container solutions (systemd-nspawn).
 * Deployed inventory management system (netbox) and integrated it with ansible.
+* Provided 2nd and 3rd level support to traders.
+* Maintained SAN and NAS storages and optimised servers for optimal throughput.
 
 #### D. E. Shaw India Pvt. Ltd. | Hyderabad, India
-*Member Technical | 2016 - 2018*
+*Member Technical | Mar 2016 - Mar 2018*
 
 * Being a part of systems team, supported D E Shaw infrastructure consisting
 of RHEL, Microsoft and various proprietary applications.
 * Worked on multiple automation projects to automate the repetitive tasks in
  python and powershell.
+* Managed Active Directory for user management and access control.
 * Created new alerts using python for a proprietary monitoring system.
 * Responsible for troubleshooting a variety of user issues and alerts.
 
 #### One.com India Pvt. Ltd. | Gurgaon, India
-*Associate System Administrator | 2015 - 2016*
+*Associate System Administrator | Aug 2015 - Mar 2016*
 
 * Worked with open source applications such as Apache, Postfix, Bind etc. on
 Linux platform, Systems Administration and IT-Security projects.
 * Responsible for programming and maintaining code in Perl and C
 * Provided third-level support on rotational shifts.
 
-## Education
-
-| Degree        | Institute | College                        | Years       |
-|:-------------:|:---------:|:------------------------------:|:-----------:|
-| B. Tech.      | UPTU      | IMS Engineering College        | 2011 - 2015 |
-| Intermediate  | CBSE      | The Awadh School               | 2011        |
-| High School   | CBSE      | Rani Laxmi Bai Memorial School | 2009        |
-
-## Skills
-
-**Programming Languages:** Python, Golang, Bash, Perl, C, Web (js/css/php)  
-**Applications:** Apache, Ansible, Postfix, Nagios, Containers (systemd-nspawn/
-  docker), MySQL, bind, LDAP, Kerberos, Jira/Bitbucket/Bamboo, htcondor
-
 ## Projects
 
 ##### Enterprise infrastructure Setup | A.P.T. Portfolio
 * Deployed organisation-wide Authentication, Authorization and naming services.
-* Deployed job scheduling grid and underlying uniform infrastructure for long
- running simulation jobs.
+* Automated provisioning and configurations of servers.
 * Programmed various ansible components to integrate with existing infrastructure
  and working CI/CD setup.
+
+##### Job Scheduler Setup | A.P.T. Portfolio
+* Deployed Job Scheduler (HTCondor) for simulations jobs.
+* Maintained grid policies for access control and fair sharing of resources.
+* Configured servers and storage for higher throughput of simulation jobs.
 
 ##### User Provisioning Automation | D. E. SHAW
 * Completed the automation of user account creation process for new user joining
@@ -90,3 +89,11 @@ in one screen.
 * **[klg](https://github.com/sakbhav/Klg):** A tiny keylogger for Windows OS.
 * **[netbox-awx](https://github.com/sakbhav/netbox-awx):** Intenvory script for
  Ansible Tower to integrate with netbox (Open Source DCIM and IPAM).
+ 
+## Education
+
+| Degree        | Institute | College                        | Years       |
+|:-------------:|:---------:|:------------------------------:|:-----------:|
+| B. Tech.      | UPTU      | IMS Engineering College        | 2011 - 2015 |
+| Intermediate  | CBSE      | The Awadh School               | 2011        |
+| High School   | CBSE      | Rani Laxmi Bai Memorial School | 2009        |
