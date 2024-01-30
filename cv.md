@@ -4,30 +4,47 @@
 
 --------------------------------------------------------------------------------
 
-Site Reliability Engineer with 6+ years of experience in designing, deploying
-and administering scalable systems, currently working with a High Frequency Trading
- Firm.
+Site Reliability Engineer with 8+ years of experience in designing, deploying
+and administering scalable systems.
  
 ## Skills
 
-**Programming Languages:** Python, Golang, Bash, Perl, C, Web (js/css/php)  
-**Applications:** Apache, Ansible, Postfix, Nagios, Containers (systemd-nspawn/
-  docker), MySQL, bind, LDAP, Kerberos, Jira/Bitbucket/Bamboo, htcondor  
+**Programming Languages:** Python, Bash, Golang, Perl, C, Web (js/css/php)  
+**Applications:** Ansible, Nagios, Containers (systemd-nspawn/docker),
+  MySQL, LDAP, Kerberos, Jira/Bitbucket/Bamboo, htcondor, Kubernetes,
+  Netbox  
+**Platforms:** RHEL 7/8, Ubuntu 16.04/18.04/20.04/22.04, Windows 8/10/11, AWS
 
 ## Experience
 
+#### Millennium Consulting (India) Pvt. Ltd. | Bengaluru, India
+*Software Engineer | Jan 2023 - Present*
+
+* Maintained and supported market data capture and normalization pipeline across
+ multiple colocations.
+* Wrote ansible playbooks to automate deployment and monitoring of market
+ data feed handlers.
+* Created scripts for auditing and reporting data availability/SLA.
+* Deployed netbox and ansible for inventory management and automation.
+* Benchmarked and optimised feed handler and OS configs.
+
+#### ConnXAI | Remote
+*Technical Architect | Aug 2022 - Dec 2022*
+
+* Deployed Netbox and modeled fields for client Thermofisher Scientific.  
+* Created ETL scripts to query and populate data to Netbox.
+
 #### A.P.T. Portfolio Pvt. Ltd. | New Delhi, India
-*Senior DevOps Engineer | Mar 2018 - Present*
+*Senior DevOps Engineer | Mar 2018 - Aug 2022*
 
 * Designed, deployed and maintained multiple enterprise applications like
  Jira, Bitbucket, Mail Server (postfix), Web Server (apache), mysql etc.
-* Optimized High Frequency Trading servers for latency sensitive applications.
-* Automated and streamlined System Administration using python/bash and provided System support.
+* Automated and streamlined System Administration using python/bash.
+* Managed instances, services, VPCs and Security Groups on AWS Cloud.
 * Deployed Nagios monitoring system and wrote custom checks.
 * Designed and developed processes for organisation-wide adoption of
 configuration management system (ansible) and container solutions (systemd-nspawn).
 * Deployed inventory management system (netbox) and integrated it with ansible.
-* Provided 2nd and 3rd level support to traders.
 * Maintained SAN and NAS storages and optimised servers for optimal throughput.
 
 #### D. E. Shaw India Pvt. Ltd. | Hyderabad, India
@@ -61,6 +78,7 @@ Linux platform, Systems Administration and IT-Security projects.
 * Deployed Job Scheduler (HTCondor) for simulations jobs.
 * Maintained grid policies for access control and fair sharing of resources.
 * Configured servers and storage for higher throughput of simulation jobs.
+* Configured provisioning of execute nodes on AWS spot instances.
 
 ##### User Provisioning Automation | D. E. SHAW
 * Completed the automation of user account creation process for new user joining
@@ -70,17 +88,10 @@ Linux platform, Systems Administration and IT-Security projects.
  system.
 
 ##### OneView | One.com
-* Created a new monitoring system for SysAdmins to monitor multiple interfaces
+* Created dashboard for SysAdmins to monitor multiple monitoring systems
 in one screen.
 * Created the backend for integrating Nagios/Shinken, ticket tracker system in
  python.
-* Created the interface specially crafted for big screen to show the current
- systems health.
-
-##### K-anonymity | IMS Engineering College
-* Created new algorithm to achieve K-Anonymity with full traversal tree.
-* Implemented the new alogorithm in Java to achieve optimal solution in minimal
- time.
 
 ##### Open source
 * **[Passwd Mgr](https://www.softpedia.com/get/Security/Password-Managers-
