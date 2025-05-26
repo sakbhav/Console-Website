@@ -4,16 +4,16 @@
 
 --------------------------------------------------------------------------------
 
-Site Reliability Engineer with 8+ years of experience in designing, deploying
+Site Reliability Engineer with 9+ years of experience in designing, deploying
 and administering scalable systems.
  
 ## Skills
 
 **Programming Languages:** Python, Bash, Golang, Perl, C, Web (js/css/php)  
 **Applications:** Ansible, Nagios, Containers (systemd-nspawn/docker),
-  MySQL, LDAP, Kerberos, Jira/Bitbucket/Bamboo, htcondor, Kubernetes,
-  Netbox  
-**Platforms:** RHEL 7/8, Ubuntu 16.04/18.04/20.04/22.04, Windows 8/10/11, AWS
+  MySQL, LDAP, Kerberos, Jira/Bitbucket/Bamboo, HTCondor, Kubernetes,
+  NetBox, ClickHouse, Grafana  
+**Platforms:** RHEL 7/8/9, Ubuntu 16.04/18.04/20.04/22.04/24.04, Windows 8/10/11, AWS, GCP
 
 ## Experience
 
@@ -22,38 +22,39 @@ and administering scalable systems.
 
 * Maintained and supported market data capture and normalization pipeline across
  multiple colocations.
-* Wrote ansible playbooks to automate deployment and monitoring of market
+* Wrote Ansible playbooks to automate deployment and monitoring of market
  data feed handlers.
 * Created scripts for auditing and reporting data availability/SLA.
-* Deployed netbox and ansible for inventory management and automation.
-* Benchmarked and optimised feed handler and OS configs.
+* Deployed NetBox and Ansible for inventory management and automation.
+* Created dashboard for reporting server and PDU power utilization.
+* Benchmarked and optimized feed handler and OS configurations.
 
 #### ConnXAI | Remote
 *Technical Architect | Aug 2022 - Dec 2022*
 
-* Deployed Netbox and modeled fields for client Thermofisher Scientific.  
-* Created ETL scripts to query and populate data to Netbox.
+* Deployed NetBox and modeled fields for client Thermo Fisher Scientific.  
+* Created ETL scripts to query and populate data to NetBox.
 
 #### A.P.T. Portfolio Pvt. Ltd. | New Delhi, India
 *Senior DevOps Engineer | Mar 2018 - Aug 2022*
 
 * Designed, deployed and maintained multiple enterprise applications like
- Jira, Bitbucket, Mail Server (postfix), Web Server (apache), mysql etc.
-* Automated and streamlined System Administration using python/bash.
+ Jira, Bitbucket, Mail Server (postfix), Web Server (apache), MySQL etc.
+* Automated and streamlined System Administration using python and bash.
 * Managed instances, services, VPCs and Security Groups on AWS Cloud.
 * Deployed Nagios monitoring system and wrote custom checks.
 * Designed and developed processes for organisation-wide adoption of
-configuration management system (ansible) and container solutions (systemd-nspawn).
-* Deployed inventory management system (netbox) and integrated it with ansible.
-* Maintained SAN and NAS storages and optimised servers for optimal throughput.
+configuration management system (Ansible) and container solutions (systemd-nspawn).
+* Deployed inventory management system (NetBox) and integrated it with Ansible.
+* Maintained SAN and NAS storages and tuned servers for optimal throughput.
 
 #### D. E. Shaw India Pvt. Ltd. | Hyderabad, India
 *Member Technical | Mar 2016 - Mar 2018*
 
-* Being a part of systems team, supported D E Shaw infrastructure consisting
+* Being a part of systems team, supported D. E. Shaw infrastructure consisting
 of RHEL, Microsoft and various proprietary applications.
 * Worked on multiple automation projects to automate the repetitive tasks in
- python and powershell.
+ python and PowerShell.
 * Managed Active Directory for user management and access control.
 * Created new alerts using python for a proprietary monitoring system.
 * Responsible for troubleshooting a variety of user issues and alerts.
@@ -61,35 +62,35 @@ of RHEL, Microsoft and various proprietary applications.
 #### One.com India Pvt. Ltd. | Gurgaon, India
 *Associate System Administrator | Aug 2015 - Mar 2016*
 
-* Worked with open source applications such as Apache, Postfix, Bind etc. on
-Linux platform, Systems Administration and IT-Security projects.
-* Responsible for programming and maintaining code in Perl and C
+* Worked with open-source applications such as Apache, Postfix, BIND etc. on
+Linux platform, Systems Administration and IT Security projects.
+* Responsible for programming and maintaining code in Perl and C.
 * Provided third-level support on rotational shifts.
 
 ## Projects
 
-##### Enterprise infrastructure Setup | A.P.T. Portfolio
+##### Enterprise Infrastructure Setup | A.P.T. Portfolio
 * Deployed organisation-wide Authentication, Authorization and naming services.
 * Automated provisioning and configurations of servers.
-* Programmed various ansible components to integrate with existing infrastructure
- and working CI/CD setup.
+* Programmed various Ansible components to integrate with existing infrastructure
+ and active CI/CD setup.
 
 ##### Job Scheduler Setup | A.P.T. Portfolio
-* Deployed Job Scheduler (HTCondor) for simulations jobs.
+* Deployed Job Scheduler (HTCondor) for running simulation jobs.
 * Maintained grid policies for access control and fair sharing of resources.
 * Configured servers and storage for higher throughput of simulation jobs.
 * Configured provisioning of execute nodes on AWS spot instances.
 
 ##### User Provisioning Automation | D. E. SHAW
-* Completed the automation of user account creation process for new user joining
+* Completed the automation of user account creation process for new users joining
  the firm.
 * Automated the RSA SecurID token assigning and creation using RSA AM SDK in Java.
-* Created various alert scripts for monitoring the RSA two factor authentication
+* Created various alert scripts for monitoring the RSA two-factor authentication
  system.
 
 ##### OneView | One.com
-* Created dashboard for SysAdmins to monitor multiple monitoring systems
-in one screen.
+* Created a dashboard enabling system administrators to view multiple monitoring
+systems on a single screen.
 * Created the backend for integrating Nagios/Shinken, ticket tracker system in
  python.
 
@@ -98,8 +99,8 @@ in one screen.
   Generators/PassWd-Mgr.shtml):** A simple password manager for windows using
   native Windows API code in C++.
 * **[klg](https://github.com/sakbhav/Klg):** A tiny keylogger for Windows OS.
-* **[netbox-awx](https://github.com/sakbhav/netbox-awx):** Intenvory script for
- Ansible Tower to integrate with netbox (Open Source DCIM and IPAM).
+* **[netbox-awx](https://github.com/sakbhav/netbox-awx):** Inventory script for
+ Ansible Tower to integrate with NetBox (Open Source DCIM and IPAM).
  
 ## Education
 
