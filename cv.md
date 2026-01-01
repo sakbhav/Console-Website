@@ -4,7 +4,7 @@
 
 --------------------------------------------------------------------------------
 
-Site Reliability Engineer with 9+ years of experience in designing, deploying
+Site Reliability Engineer with 10+ years of experience in designing, deploying
 and administering scalable systems.
  
 ## Skills
@@ -13,7 +13,7 @@ and administering scalable systems.
 **Applications:** Ansible, Nagios, Containers (systemd-nspawn/docker),
   MySQL, LDAP, Kerberos, Jira/Bitbucket/Bamboo, HTCondor, Kubernetes,
   NetBox, ClickHouse, Grafana  
-**Platforms:** RHEL 7/8/9, Ubuntu 16.04/18.04/20.04/22.04/24.04, Windows 8/10/11, AWS, GCP
+**Platforms:** RHEL 7/8/9, Ubuntu 16.04/18.04/20.04/22.04/24.04, Windows 8/10/11, Amazon Linux (AWS)
 
 ## Experience
 
@@ -28,6 +28,7 @@ and administering scalable systems.
 * Deployed NetBox and Ansible for inventory management and automation.
 * Created dashboard for reporting server and PDU power utilization.
 * Benchmarked and optimized feed handler and OS configurations.
+* Mentored SRE team members for cloud operations and application development/deployments.
 
 #### ConnXAI | Remote
 *Technical Architect | Aug 2022 - Dec 2022*
@@ -68,6 +69,12 @@ Linux platform, Systems Administration and IT Security projects.
 * Provided third-level support on rotational shifts.
 
 ## Projects
+
+##### Observability Enhacements | Millennium
+* Created multiple dashboards and alerting rules for data normalization pipeline.
+* Enhanced metrics collection for multiple applications deployed on kubernetes.
+* Deployed Elastic search and Logstash for feed handler log ingestion.
+* Created pipeline for rack power utilization from various sources.
 
 ##### Enterprise Infrastructure Setup | A.P.T. Portfolio
 * Deployed organisation-wide Authentication, Authorization and naming services.

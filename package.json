@@ -4,11 +4,16 @@
   "description": "My personal website",
   "main": "index.html",
   "dependencies": {
-    "xterm": "3.14.5",
-    "xterm-addon-fit": "0.1.0"
+    "@xterm/xterm": "6.0.0",
+    "@xterm/addon-fit": "0.11.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:xterm": "mkdir -p dist && esbuild src/xterm-entry.js --bundle --minify --target=es2020 --outfile=dist/xterm.bundle.js --format=iife --global-name=TerminalBundle --define:process.env.NODE_ENV=\"production\" && cp node_modules/@xterm/xterm/css/xterm.css dist/xterm.css",
+    "build:xterm:split": "mkdir -p dist/esm && esbuild src/xterm-entry.js --bundle --minify --splitting --format=esm --outdir=dist/esm --target=es2020 --define:process.env.NODE_ENV=\"production\" && cp node_modules/@xterm/xterm/css/xterm.css dist/esm/xterm.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +24,5 @@
   "bugs": {
     "url": "https://github.com/sakbhav/Console-Website/issues"
   },
-  "homepage": "http://saket.srivastava.pw"
+  "homepage": "https://saket.srivastava.pw"
 }
