@@ -40,6 +40,14 @@ export function main() {
     term.write(p + '$ ');
   }
 
+  function setCommand(command) {
+      for(i=0;i<currentCommand.length;i++) {
+        term.write('\b \b');
+      }
+      currentCommand = command;
+      term.write(currentCommand);
+  }
+
   prompt();
 
   let inputEnabled = true;
@@ -74,11 +82,11 @@ export function main() {
       }
     } else if (ev.key === 'ArrowUp') {
       if (commandIndex > 0) {
-        currentCommand = pastCommands[--commandIndex] || '';
+        setCommand(pastCommands[--commandIndex] || '');
       }
     } else if (ev.key === 'ArrowDown') {
-      if (commandIndex + 1 < pastCommands.length) {
-        currentCommand = pastCommands[++commandIndex] || '';
+      if (commandIndex + 1 <= pastCommands.length) {
+        setCommand(pastCommands[++commandIndex] || '');
       }
     } else if (printable) {
       term.write(key);
